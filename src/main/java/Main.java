@@ -11,11 +11,10 @@ public class Main {
 
         // Register our bot
         try {
-            botsApi.registerBot(new RepeatingBot());
+            botsApi.registerBot(new PhotoBot());
         } catch (TelegramApiException e) {
             e.printStackTrace();
         }
         System.out.println("The telegram bot is ready for communication");
-
     }
 }
